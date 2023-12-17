@@ -1,0 +1,148 @@
+﻿{
+  "name": "IISProektОценка",
+  "modelName": "i-i-s-proekt-оценка",
+  "className": "Оценка",
+  "nameSpace": "IIS.Proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "датаПроведения",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "комментарии",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "статус",
+      "type": "i-i-s-proekt-статусы",
+      "flexberryType": "Статусы",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-proekt-сотрудники",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ОценкаE",
+      "modelName": "i-i-s-proekt-оценка",
+      "attrs": [
+        {
+          "name": "датаПроведения",
+          "caption": "Дата проведения",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статус",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "комментарии",
+          "caption": "Комментарии",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 4
+            }
+          ],
+          "index": 3,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-proekt-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "ОценкаL",
+      "modelName": "i-i-s-proekt-оценка",
+      "attrs": [
+        {
+          "name": "датаПроведения",
+          "caption": "Дата проведения",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "статус",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "комментарии",
+          "caption": "Комментарии",
+          "hidden": false,
+          "index": 2
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": false,
+              "index": 3
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "ФИО",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-proekt-сотрудники",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

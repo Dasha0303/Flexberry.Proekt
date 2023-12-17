@@ -1,0 +1,39 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    },
+    {
+      "master": "сотрудники",
+      "displayAttributeName": "фИО",
+      "required": true,
+      "relationName": "Подробно.Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": "i-i-s-proekt-подробно"
+    },
+    {
+      "master": "оценка",
+      "displayAttributeName": "комментарии",
+      "required": true,
+      "relationName": "Подробно.Оценка",
+      "projection": "ОценкаL",
+      "detailModelName": "i-i-s-proekt-подробно"
+    }
+  ],
+  "external": false,
+  "caption": "Отчет об оценке",
+  "name": "IISProektОтчетОбОценкеE",
+  "className": "ОтчетОбОценкеE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-отчет-об-оценке",
+      "modelProjection": "ОтчетОбОценкеE"
+    }
+  ]
+}

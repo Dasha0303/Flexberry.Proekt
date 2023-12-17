@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "i-i-s-proekt-отчет-об-оценке-e",
+  "editForm": "i-i-s-proekt-отчет-об-оценке-e",
+  "external": false,
+  "caption": "Отчет об оценке",
+  "name": "IISProektОтчетОбОценкеL",
+  "className": "ОтчетОбОценкеL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-отчет-об-оценке",
+      "modelProjection": "ОтчетОбОценкеL"
+    }
+  ]
+}

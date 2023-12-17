@@ -1,0 +1,88 @@
+﻿{
+  "name": "IISProektПодробно",
+  "modelName": "i-i-s-proekt-подробно",
+  "className": "Подробно",
+  "nameSpace": "IIS.Proekt",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "оценка",
+      "relatedTo": "i-i-s-proekt-оценка",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "сотрудники",
+      "relatedTo": "i-i-s-proekt-сотрудники",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "отчетОбОценке",
+      "relatedTo": "i-i-s-proekt-отчет-об-оценке",
+      "inverse": "подробно"
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ПодробноE",
+      "modelName": "i-i-s-proekt-подробно",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": "ФИО",
+          "lookupValueField": "фИО",
+          "relationName": "Сотрудники",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "фИО",
+              "caption": "ФИО",
+              "hidden": true,
+              "index": 1
+            }
+          ],
+          "index": 0,
+          "type": "standard",
+          "caption": "Сотрудники",
+          "name": "сотрудники",
+          "relatedTo": "i-i-s-proekt-сотрудники",
+          "inverse": null
+        },
+        {
+          "lookupValue": "Комментарии",
+          "lookupValueField": "комментарии",
+          "relationName": "Оценка",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "комментарии",
+              "caption": "Комментарии",
+              "hidden": true,
+              "index": 3
+            }
+          ],
+          "index": 2,
+          "type": "standard",
+          "caption": "Оценка",
+          "name": "оценка",
+          "relatedTo": "i-i-s-proekt-оценка",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

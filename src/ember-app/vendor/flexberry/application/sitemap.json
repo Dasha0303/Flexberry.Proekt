@@ -1,0 +1,59 @@
+﻿{
+  "applicationCaption": "Proekt",
+  "applicationTitle": "Proekt",
+  "items": [
+    {
+      "link": null,
+      "menuName": "увольнение",
+      "caption": "Увольнение",
+      "title": "Увольнение",
+      "children": [
+        {
+          "link": "i-i-s-proekt-увольнение-l",
+          "menuName": null,
+          "caption": "Увольнение",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "оценка",
+      "caption": "Оценка",
+      "title": "Оценка",
+      "children": [
+        {
+          "link": "i-i-s-proekt-оценка-l",
+          "menuName": null,
+          "caption": "Оценка",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "i-i-s-proekt-отчет-об-оценке-l",
+          "menuName": null,
+          "caption": "Отчет об оценке",
+          "title": "",
+          "children": null
+        }
+      ]
+    },
+    {
+      "link": null,
+      "menuName": "сотрудники",
+      "caption": "Сотрудники",
+      "title": "Сотрудники",
+      "children": [
+        {
+          "link": "i-i-s-proekt-сотрудники-l",
+          "menuName": null,
+          "caption": "Сотрудники",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

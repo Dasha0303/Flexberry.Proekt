@@ -1,0 +1,8 @@
+﻿{
+  "nameSpace": "IIS.Proekt",
+  "className": "Статусы",
+  "enumObjects": {
+    "Успешно": "",
+    "НеУдовлетворит": ""
+  }
+}

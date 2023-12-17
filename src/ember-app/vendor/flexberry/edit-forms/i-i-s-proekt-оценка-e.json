@@ -1,0 +1,23 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Сотрудники",
+      "projection": "СотрудникиL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Оценка",
+  "name": "IISProektОценкаE",
+  "className": "ОценкаE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "i-i-s-proekt-оценка",
+      "modelProjection": "ОценкаE"
+    }
+  ]
+}
